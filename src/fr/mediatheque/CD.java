@@ -8,9 +8,12 @@ public class CD extends Media{
         super(author, title);
         this.format = format;
     }
+    public Format getFormat(){
+        return this.format;
+    }
 
     public String toString(){
-        return "Voici "+ getTitle()+" créée par "+ getAuthor()+"format ["+this.format+"].";
+        return "Voici "+ getTitle()+" créée par "+ getAuthor()+" au format ["+this.format+"].";
     }
 
 

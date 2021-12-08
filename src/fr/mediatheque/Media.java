@@ -8,11 +8,19 @@ public class Media {
     private final String author;
     private final String title;
     private int rating;
-    private List<Integer> ratingList = new ArrayList<>();
+    private final List<Integer> ratingList = new ArrayList<>();
+    private Format format;
+
 
     public Media(String author, String title){
         this.author = author;
         this.title = title;
+
+    }
+
+
+    public Format getFormat(){
+        return this.format;
     }
 
     public String getAuthor(){
